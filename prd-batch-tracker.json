@@ -1,0 +1,60 @@
+{
+  "batch_date": "2026-03-10",
+  "batch_time": "22:00_UTC",
+  "analysis_summary": {
+    "coda_requirements_analyzed": 30,
+    "existing_prds": 14,
+    "new_prds_created": 3,
+    "total_prds": 17,
+    "coverage_percentage": 85
+  },
+  "new_prds_created": [
+    {
+      "name": "Google OAuth Authentication Integration",
+      "file": "google-oauth-authentication.md",
+      "priority": "HIGH",
+      "revenue_impact": "+$8K MRR",
+      "effort": "Medium",
+      "deadline": "2026-03-24",
+      "gap_source": "Coda analysis - commented out code"
+    },
+    {
+      "name": "Expense Reporting & Billable Hours Module", 
+      "file": "expense-reporting-module.md",
+      "priority": "HIGH",
+      "revenue_impact": "+$12K MRR",
+      "effort": "High", 
+      "deadline": "2026-04-07",
+      "gap_source": "Coda analysis - partial implementation"
+    },
+    {
+      "name": "Package-Based Task Limits Backend Implementation",
+      "file": "package-task-limits-backend.md", 
+      "priority": "CRITICAL",
+      "revenue_impact": "+$15K MRR",
+      "effort": "Medium",
+      "deadline": "2026-03-20",
+      "gap_source": "Code analysis - missing backend models"
+    }
+  ],
+  "batch_metrics": {
+    "total_revenue_impact": "+$35K MRR",
+    "critical_count": 1,
+    "high_count": 2,
+    "assigned_reviewer": "@mehzabeen_c",
+    "branch_name": "prd-batch-2026-03-10-gaps",
+    "commit_hash": "f26a68b"
+  },
+  "next_steps": {
+    "create_pr": true,
+    "assign_reviewer": "@mehzabeen_c", 
+    "notification_required": true,
+    "roadmap_announcement": false,
+    "completion_percentage_required_for_roadmap": 95
+  },
+  "remaining_gaps": [
+    "Client Onboarding Email Automation - needs detailed analysis",
+    "In-App Chat System - large implementation effort",
+    "Advanced reporting modules - multiple PRDs needed"
+  ]
+}
