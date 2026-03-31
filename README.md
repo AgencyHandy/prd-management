@@ -23,6 +23,9 @@ Track, manage, and accelerate PRDs from identification to deployment, focusing o
 - [Post-Payment Automation Fix](prds/active/post-payment-automation-fix.md) - Form delivery failure  
 - [Team Notification System](prds/active/team-notification-system.md) - @mentions not working
 
+### High Priority (Workflow & Scale)
+- [Service Module Core Workflows](prds/active/service-module-core-workflows.md) - Roles, pricing, lifecycle & UX
+
 ## 📊 Metrics Tracking
 
 - **Revenue Impact**: Direct/Indirect revenue effect
@@ -37,6 +40,29 @@ Track, manage, and accelerate PRDs from identification to deployment, focusing o
 3. **Priority Assignment** - Revenue impact-based prioritization
 4. **Development Tracking** - GitHub issues linked to PRDs
 5. **Release Management** - Deployment coordination and user notification
+
+## 🧠 PRD Authoring Rules (Roles, Impact, UX)
+
+To keep PM decisions unambiguous and implementation aligned with the product:
+
+1. **Always define roles explicitly**  
+   - For each behavior (view, edit, publish, delete, cancel, purchase, filter, sort, etc.), list which roles are allowed or blocked.  
+   - Use the concrete role names used in code: `superAdmin`, `admin`, `projectManager`, `assignee`, `client`, `member`.
+
+2. **Call out forwarding / cross‑module impact**  
+   - When a flow starts in one module and finishes in another (e.g. client cancels a service → agency sees notification → lands on Order), describe:
+   - Which modules are involved.
+   - What data is passed between them.
+   - What “good” and “bad” paths look like for each role.
+
+3. **Describe best UX, not just “happy path”**  
+   - Include empty‑states, error states, and redirects (e.g. “after cancel, redirect client to Service Board with a success message”).  
+   - Prefer PM‑level UX descriptions over low‑level implementation notes.
+
+4. **Align with existing behavior before expanding scope**  
+   - Wherever possible, PRDs should reference how the feature works today (based on code) and then describe **additions/changes**, instead of redefining behavior from scratch.
+
+These rules apply to all new PRDs added to this repo and should be treated as a checklist for PMs before handing off to engineering.
 
 ## 🎯 Success Metrics
 
