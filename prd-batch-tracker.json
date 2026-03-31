@@ -4,8 +4,8 @@
   "analysis_summary": {
     "coda_requirements_analyzed": 30,
     "existing_prds": 14,
-    "new_prds_created": 3,
-    "total_prds": 17,
+    "new_prds_created": 6,
+    "total_prds": 20,
     "coverage_percentage": 85
   },
   "new_prds_created": [
@@ -35,12 +35,39 @@
       "effort": "Medium",
       "deadline": "2026-03-20",
       "gap_source": "Code analysis - missing backend models"
+    },
+    {
+      "name": "Custom Script Support",
+      "file": "custom-script-support.md",
+      "priority": "HIGH",
+      "revenue_impact": "+$5K to +$10K MRR",
+      "effort": "Medium",
+      "deadline": "PENDING",
+      "gap_source": "Product request - workspace automation flexibility"
+    },
+    {
+      "name": "Task Label Management",
+      "file": "task-label-management.md",
+      "priority": "HIGH",
+      "revenue_impact": "+$4K to +$8K MRR",
+      "effort": "Medium",
+      "deadline": "PENDING",
+      "gap_source": "Product request - task organization consistency"
+    },
+    {
+      "name": "Workspace Task Template System",
+      "file": "workspace-task-template-system.md",
+      "priority": "HIGH",
+      "revenue_impact": "+$6K to +$12K MRR",
+      "effort": "Medium",
+      "deadline": "PENDING",
+      "gap_source": "Product request - repeatable delivery workflows"
     }
   ],
   "batch_metrics": {
-    "total_revenue_impact": "+$35K MRR",
+    "total_revenue_impact": "+$50K MRR (estimated)",
     "critical_count": 1,
-    "high_count": 2,
+    "high_count": 5,
     "assigned_reviewer": "@mehzabeen_c",
     "branch_name": "prd-batch-2026-03-10-gaps",
     "commit_hash": "f26a68b"
