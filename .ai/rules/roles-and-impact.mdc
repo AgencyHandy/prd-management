@@ -1,0 +1,30 @@
+## Rule: Always Specify Roles, Impact, and UX
+
+When drafting or updating PRDs in this repo:
+
+1. **Name the roles explicitly**
+   - Use the concrete role names that exist in code: `superAdmin`, `admin`, `projectManager`, `assignee`, `client`, `member`.
+   - For every important behavior (view, edit, publish, delete, cancel, purchase, filter, sort, etc.), say which roles:
+     - **Can perform it**
+     - **See the result**
+     - **Are explicitly blocked**
+
+2. **Call out cross‑module impact**
+   - If a flow jumps modules (e.g. Service → Order → Proposal → Notification), describe:
+     - Which modules are involved.
+     - What data is passed between them.
+     - What the user experiences at each step (for both agency and client).
+
+3. **Describe best user experience, not just “it works”**
+   - Include:
+     - Where the user is redirected after success/failure.
+     - What message or state they see (empty‑states, error messages, confirmations).
+     - How the UX differs by role when it matters.
+
+4. **Prefer incremental change over rewrite**
+   - Briefly capture how the system works **today** (based on the code),
+   - Then describe what is changing or being added,
+   - So engineers and QA can clearly see scope and regression risk.
+
+Use this rule whenever you add or modify PRDs, especially for core modules like Service, Orders, Payments, Notifications, and Redirects.
+
