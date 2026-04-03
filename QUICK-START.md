@@ -5,14 +5,15 @@
 ## Current Status
 
 ✅ **3 Critical PRDs Created** - Ready for immediate development  
-✅ **Revenue Impact Calculated** - +$26K MRR recovery potential  
+✅ **17 Active PRDs Tracked** - Centralized in `/prds/active/`  
+✅ **Revenue Impact Calculated** - +$50K MRR estimated recovery potential  
 ✅ **Templates Ready** - Standardized PRD format  
 ✅ **Automation Built** - GitHub Actions for tracking  
 
 ## Immediate Next Steps
 
 ### 1. **Priority Confirmation** (@mehzabeen_c)
-- Review 3 active PRDs in `/prds/active/`
+- Review 17 active PRDs in `/prds/active/`
 - Confirm CRITICAL/HIGH priorities
 - Set specific deadlines for each
 
